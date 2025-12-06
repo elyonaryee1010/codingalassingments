@@ -226,8 +226,20 @@ user_input = input("Ask them their names:")
 print(f"Hello my name is Tom and I am a {tom.species}")
 print(f"Hello my name is jerry and I am a{tom.species}")
 
-    
+  #Expression creator  
+num1 = 5
+num2 = 6
+num3 = 7
+print("Type this: 5+6+7")
 
+user_input = input("Enter your expression: ")
+
+try:
+    result = eval(user_input)
+    print("Answer", result)
+    
+except:
+    print("Error")
 
 
  

@@ -241,5 +241,24 @@ try:
 except:
     print("Error")
 
+#polygonal calculator
+
+class Square:
+    def __init__(self, length):
+        self.side_length=length
+        
+    def area(self):
+        return self.side_length**2
+        
+        
+print("Polygonal calculator")
+    
+side = float(input("Type your side"))
+    
+my_square = Square(side)
+    
+print(f"\nSide Length:{my_square.side_length}")
+print(f"\nArea: {my_square.area()}")
+
 
  

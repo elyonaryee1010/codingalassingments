@@ -260,5 +260,27 @@ my_square = Square(side)
 print(f"\nSide Length:{my_square.side_length}")
 print(f"\nArea: {my_square.area()}")
 
+#pART-2
+
+class Rectangle:
+    def __init__(self, width, height):
+       self.width = width
+       self.height= height
+        
+    def area(self):
+        return self.width * self.height
+        
+        
+print("Polygon calculator-2")
+
+user_width = float(input("Enter your width:"))
+user_height= float(input("Enter your hieght"))
+
+my_rectangle = Rectangle(width= user_width, height= user_height)
+
+print(f"\nArea:{my_rectangle.area()}")
+        
+        
+
 
  

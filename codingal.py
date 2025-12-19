@@ -279,6 +279,47 @@ user_height= float(input("Enter your hieght"))
 my_rectangle = Rectangle(width= user_width, height= user_height)
 
 print(f"\nArea:{my_rectangle.area()}")
+
+#File Reading'
+file_read = open('sample_doc.txt', 'r')
+print("🔴Alert")
+print(file_read.read())
+file_read.close()
+
+#File Write'
+file_write = open('sample_doc.txt', 'w')
+file_write.write("File is being written")
+file_write.write("Parakeets")
+file_write.close()
+
+#Append
+file_append = open('sample_doc.txt', 'a')
+file_append.write("This is being appended")
+file_append.write("Appended")
+file_append.close()
+
+#Next code
+first = open('sample_doc.txt', 'r+')
+
+content = f1.read()
+
+
+f1.seek(0)
+f1.write("Data")
+
+f1.seek(0)
+print('content: -\n', f1.read())
+
+
+f1.close()
+
+
+
+
+
+
+
+
         
         
 

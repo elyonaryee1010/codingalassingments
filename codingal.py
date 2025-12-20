@@ -313,6 +313,39 @@ print('content: -\n', f1.read())
 
 f1.close()
 
+#Number 
+file = open('sample_doc.txt', 'r')
+content = file.read()
+print(content)
+file.close()
+
+#Number 2
+file = open('sample_doc.txt', 'r')
+line1 = file.readline()
+print(line1)
+file.close()
+
+#Number 3
+fn = open('sample_doc.txt', 'r')
+fn1 = open('sample_doc.txt', 'r')
+
+cont = readlines()
+type(cont)
+for i in range (1, len(cont)+1)
+     if(i % 2 != 0):
+         fn1.write(cont[i-1])
+     else:
+         pass
+     
+fn.close()     
+fn1.close()
+
+
+
+
+
+
+
 
 
 

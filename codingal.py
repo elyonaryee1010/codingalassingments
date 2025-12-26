@@ -341,6 +341,42 @@ fn.close()
 fn1.close()
 
 
+#with
+with open("asignment.txt", "w")
+    f.write("Assignment")
+    
+f.close()
+
+#split
+with open("asignment.txt", "r") as file:
+    data = file.readlines()
+    for line in data:
+        word = line.split()
+        print(word)
+        
+#new file
+file = open('asignment.txt', 'x'):
+
+#checking fiel
+import os
+if os.path.exists("asignment.txt"):
+    print("exists")
+else:
+    print("doesnt exists")
+    
+#create new file if file doesnt exist
+file = open("asignment.txt", "w"):
+
+#delete the whle folder
+import os
+os.rmdir("asignment")
+
+#delete
+import os
+os.remove("asignment.txt")
+
+
+
 
 
 

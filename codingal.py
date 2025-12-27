@@ -375,6 +375,23 @@ os.rmdir("asignment")
 import os
 os.remove("asignment.txt")
 
+#First tinker assignment.
+for i in range(3):
+    for j in range(30):
+        frame = tk.Frame(
+            master=window,
+            relief=tk.RAISED,
+            borderwidth = 1
+          )
+          frame.grid(row=i, column=j, padx=5, pady=19)
+          label = tk.Label(master=frame, fram=f"Row {i}\nColumn {j}")
+          
+    label.pack()
+    window.mainloop()
+            
+            
+        
+
 
 
 

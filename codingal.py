@@ -388,6 +388,58 @@ for i in range(3):
           
     label.pack()
     window.mainloop()
+
+
+#rock paper scissors.
+
+import random
+from tkinter import *
+
+root = Tk()
+root.geometry("400x500")
+root.title("Rock Paper Scissor Cup 2026")
+root.config(bg="black")
+
+#Scores of the team
+user_score = 0
+comp_score = 0
+
+def play(user_choice):
+global user_score, comp_score
+  options = ["Rock🪨", "Paper", "Scissors"]
+computer_choice = random.choice(options)
+
+if user_choice == computer_choice:
+  result = "A tie: great jo all of you"
+  color= "white"
+  
+  
+  
+  
+
+elif (user_choice == "Rock🪨" and computer_choice == "Scissors") or \
+     (user_choice == "Paper" and computer_choice == "Rock") or \
+     (user_choice == "Scissors" and computer_choice == "Paper"):
+     result = "YOU WIN!!!"
+     user_score += 1
+     color = "green"
+else:
+  result = "Computer is the champion"
+  comp_score += 1
+  color = "red"
+
+  #buttons
+
+  Button(root, text="Rock", command=lambda: play("Rock")).pack()
+  Button(root, text="Paper", command=lambda: play("Paper")).pack()
+  Button(root, text="Scissors", command=lambda: play("Scissors")).pack()
+
+  result_label.config = Label(root, text="Start")
+  result_label.pack()
+
+  root.mainloop()
+
+
             
             
         
